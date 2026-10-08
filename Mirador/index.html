@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">Mira<span>dor</span></a>
+
+    <form class="buscador">
+        <input type="text" placeholder="Buscar videos">
+        <button type="submit">Buscar</button>
+    </form>
+
+    <div class="avatar">E</div>
+</header>
+
+<div class="contenedor">
+
+<aside class="sidebar">
+    <ul class="sidebar_lista">
+        <li class="activo"><a href="#">Inicio</a></li>
+        <li><a href="#">En vivo</a></li>
+        <li><a href="#">Guardados</a></li>
+        <li><a href="#">Historial</a></li>
+    </ul>
+
+    <h3 class="sidebar_titulo">Canales</h3>
+    <ul class="sidebar_lista canales">
+        <li><a href="#"><span class="mini_avatar c_uno"></span> Canal Uno</a></li>
+        <li><a href="#"><span class="mini_avatar c_dos"></span> Juegos y Más</a></li>
+        <li><a href="#"><span class="mini_avatar c_tres"></span> Cocina Fácil</a></li>
+    </ul>
+</aside>
+
+<main>
+
+<section class="categorias">
+    <button class="categoria activo">Todo</button>
+    <button class="categoria">Música</button>
+    <button class="categoria">Juegos</button>
+    <button class="categoria">Cocina</button>
+    <button class="categoria">Programación</button>
+</section>
+
+<section class="videos_grid">
+
+    <article class="video_card">
+        <div class="miniatura m1">
+            <span class="duracion">12:34</span>
+        </div>
+        <h4>Cómo hacer una página web desde cero</h4>
+        <p class="canal">Canal Uno</p>
+        <p class="datos">120 mil vistas · hace 2 días</p>
+    </article>
+
+    <article class="video_card">
+        <div class="miniatura m2">
+            <span class="duracion en_vivo">EN VIVO</span>
+        </div>
+        <h4>Jugando terror hasta las 4am</h4>
+        <p class="canal">Juegos y Más</p>
+        <p class="datos">3,2 mil mirando</p>
+    </article>
+
+    <article class="video_card">
+        <div class="miniatura m3">
+            <span class="duracion">8:02</span>
+        </div>
+        <h4>Milanesas a la napolitana como las de la abuela</h4>
+        <p class="canal">Cocina Fácil</p>
+        <p class="datos">45 mil vistas · hace 1 semana</p>
+    </article>
+
+    <article class="video_card">
+        <div class="miniatura m4">
+            <span class="duracion">15:47</span>
+        </div>
+        <h4>Arduino y ESP32: primer proyecto</h4>
+        <p class="canal">Canal Uno</p>
+        <p class="datos">22 mil vistas · hace 5 días</p>
+    </article>
+
+    <article class="video_card">
+        <div class="miniatura m5">
+            <span class="duracion">4:20</span>
+        </div>
+        <h4>Juegos indie hechos en Godot</h4>
+        <p class="canal">Juegos y Más</p>
+        <p class="datos">78 mil vistas · hace 2 semanas</p>
+    </article>
+
+    <article class="video_card">
+        <div class="miniatura m6">
+            <span class="duracion">22:10</span>
+        </div>
+        <h4>Pizza casera en 30 minutos</h4>
+        <p class="canal">Cocina Fácil</p>
+        <p class="datos">9 mil vistas · hace 1 día</p>
+    </article>
+
+</section>
+
+</main>
+
+</div>
+
+<footer>
+    <p>&copy; Enzo Benjamin Romero</p>
+</footer>
+
+</body>
+</html>

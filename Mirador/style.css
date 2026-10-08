@@ -1,0 +1,234 @@
+/* * */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* COLORES */
+
+:root{
+    --fondo: #0d1117;
+    --fondo_claro: #161b22;
+    --borde: #2a313c;
+    --texto: #e6edf3;
+    --gris: #8b949e;
+    --violeta: #8b5cf6;
+}
+
+body{
+    background: var(--fondo);
+    color: var(--texto);
+}
+
+a{
+    text-decoration: none;
+    color: var(--texto);
+}
+
+button{
+    border: none;
+    cursor: pointer;
+}
+
+/* HEADER */
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 9vh;
+    padding: 0 3vw;
+
+    background: var(--fondo_claro);
+    border-bottom: 1px solid var(--borde);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    z-index: 10;
+}
+
+.logo{
+    font-size: 1.6vw;
+    font-weight: bold;
+}
+
+.logo span{
+    color: var(--violeta);
+}
+
+/* BUSCADOR */
+
+.buscador{
+    display: flex;
+    gap: 0.5vw;
+    width: 35vw;
+}
+
+.buscador input{
+    flex: 1;
+    padding: 1vh 1vw;
+    background: var(--fondo);
+    color: var(--texto);
+    border: 1px solid var(--borde);
+    border-radius: 8px;
+    outline: none;
+}
+
+.buscador input:focus{
+    border-color: var(--violeta);
+}
+
+.buscador button{
+    padding: 1vh 1.5vw;
+    background: var(--violeta);
+    color: white;
+    border-radius: 8px;
+    transition: 0.25s;
+}
+
+.buscador button:hover{
+    opacity: 0.8;
+}
+
+.avatar{
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 50%;
+    background: var(--violeta);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CONTENEDOR */
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 16vw 1fr;
+    padding-top: 9vh;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+    position: sticky;
+    top: 9vh;
+    height: 91vh;
+    padding: 3vh 1.5vw;
+    border-right: 1px solid var(--borde);
+}
+
+.sidebar_lista li{
+    list-style: none;
+}
+
+.sidebar_lista a{
+    display: block;
+    padding: 1.2vh 1vw;
+    border-radius: 8px;
+    transition: 0.25s;
+}
+
+.sidebar_lista a:hover{
+    background: var(--fondo_claro);
+}
+
+.sidebar_lista .activo a{
+    background: var(--fondo_claro);
+    color: var(--violeta);
+}
+
+.sidebar_titulo{
+    margin: 4vh 0 1vh 1vw;
+    font-size: 0.9vw;
+    color: var(--gris);
+    text-transform: uppercase;
+}
+
+/* FALTA: .mini_avatar (circulito de color al lado de cada canal: c_uno, c_dos, c_tres) */
+
+/* MAIN */
+
+main{
+    padding: 3vh 3vw;
+}
+
+/* CATEGORIAS */
+
+.categorias{
+    display: flex;
+    gap: 1vw;
+    margin-bottom: 4vh;
+}
+
+.categoria{
+    padding: 1vh 1.2vw;
+    border-radius: 20px;
+    background: var(--fondo_claro);
+    color: var(--texto);
+    border: 1px solid var(--borde);
+    transition: 0.25s;
+}
+
+.categoria:hover{
+    border-color: var(--violeta);
+}
+
+.categoria.activo{
+    background: var(--violeta);
+    border-color: var(--violeta);
+}
+
+/* VIDEOS */
+
+.videos_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5vh 2vw;
+}
+
+.miniatura{
+    position: relative;
+    width: 100%;
+    height: 22vh;
+    border-radius: 10px;
+    margin-bottom: 1.5vh;
+}
+
+/* miniaturas de mentira hasta que haya imagenes */
+
+.m1{ background: linear-gradient(135deg, #8b5cf6, #3b82f6); }
+.m2{ background: linear-gradient(135deg, #1e293b, #475569); }
+.m3{ background: linear-gradient(135deg, #f59e0b, #ef4444); }
+.m4{ background: linear-gradient(135deg, #10b981, #3b82f6); }
+.m5{ background: linear-gradient(135deg, #ec4899, #8b5cf6); }
+.m6{ background: linear-gradient(135deg, #f97316, #facc15); }
+
+.duracion{
+    position: absolute;
+    bottom: 1vh;
+    right: 0.6vw;
+    padding: 0.3vh 0.4vw;
+    border-radius: 4px;
+    background: rgba(0,0,0,0.75);
+    font-size: 0.8vw;
+}
+
+/* FALTA: .duracion.en_vivo (que se note que es en vivo, otro color de fondo) */
+
+.video_card h4{
+    margin-bottom: 0.8vh;
+}
+
+/* FALTA: .canal y .datos (texto mas chico y en gris) */
+
+/* FALTA: hover de .video_card (que se levante un poco como las cards de MiLanding) */
+
+/* FALTA: footer */
