@@ -10,12 +10,12 @@
 /* COLORES */
 
 :root{
-    --fondo: #0d1117;
-    --fondo_claro: #161b22;
-    --borde: #2a313c;
-    --texto: #e6edf3;
-    --gris: #8b949e;
-    --violeta: #8b5cf6;
+    --fondo: #0f0f0f;
+    --fondo_claro: #212121;
+    --borde: #303030;
+    --texto: #f1f1f1;
+    --gris: #aaaaaa;
+    --rojo: #ff1a1a;
 }
 
 body{
@@ -59,7 +59,7 @@ header{
 }
 
 .logo span{
-    color: var(--violeta);
+    color: var(--rojo);
 }
 
 /* BUSCADOR */
@@ -81,12 +81,12 @@ header{
 }
 
 .buscador input:focus{
-    border-color: var(--violeta);
+    border-color: var(--rojo);
 }
 
 .buscador button{
     padding: 1vh 1.5vw;
-    background: var(--violeta);
+    background: var(--rojo);
     color: white;
     border-radius: 8px;
     transition: 0.25s;
@@ -100,7 +100,7 @@ header{
     width: 2.5vw;
     height: 2.5vw;
     border-radius: 50%;
-    background: var(--violeta);
+    background: var(--rojo);
 
     display: flex;
     align-items: center;
@@ -142,7 +142,7 @@ header{
 
 .sidebar_lista .activo a{
     background: var(--fondo_claro);
-    color: var(--violeta);
+    color: var(--rojo);
 }
 
 .sidebar_titulo{
@@ -178,12 +178,12 @@ main{
 }
 
 .categoria:hover{
-    border-color: var(--violeta);
+    border-color: var(--rojo);
 }
 
 .categoria.activo{
-    background: var(--violeta);
-    border-color: var(--violeta);
+    background: var(--rojo);
+    border-color: var(--rojo);
 }
 
 /* VIDEOS */
@@ -204,12 +204,12 @@ main{
 
 /* miniaturas de mentira hasta que haya imagenes */
 
-.m1{ background: linear-gradient(135deg, #8b5cf6, #3b82f6); }
-.m2{ background: linear-gradient(135deg, #1e293b, #475569); }
-.m3{ background: linear-gradient(135deg, #f59e0b, #ef4444); }
-.m4{ background: linear-gradient(135deg, #10b981, #3b82f6); }
-.m5{ background: linear-gradient(135deg, #ec4899, #8b5cf6); }
-.m6{ background: linear-gradient(135deg, #f97316, #facc15); }
+.m1{ background: linear-gradient(135deg, #ff1a1a, #7a0000); }
+.m2{ background: linear-gradient(135deg, #272727, #4a4a4a); }
+.m3{ background: linear-gradient(135deg, #ff6a00, #ff1a1a); }
+.m4{ background: linear-gradient(135deg, #3a3a3a, #8a0000); }
+.m5{ background: linear-gradient(135deg, #b30000, #ff5c5c); }
+.m6{ background: linear-gradient(135deg, #1c1c1c, #ff1a1a); }
 
 .duracion{
     position: absolute;
