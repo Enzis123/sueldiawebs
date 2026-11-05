@@ -3,115 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tubito</title>
+    <title>Ñoutube</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imgs\copy.ico">
 </head>
 <body>
+    <nav>
+        <section class="barra-lateral">
+            <section class="logo">
+                <img src="imgs/logo.png" alt="">
+                <h1>Ñoutube</h1>
+            </section>
 
-<header>
-    <a href="index.html" class="logo">Tubi<span>to</span></a>
+            <ul class="menu">
+                <li><a href="#" class="activo"><img src="imgs/inicio.png" alt=""> Inicio</a></li>
+                <li><a href="#"><img src="imgs/shorts.png" alt=""> Shorts</a></li>
+            </ul>
 
-    <form class="buscador">
-        <input type="text" placeholder="Buscar videos">
-        <button type="submit">Buscar</button>
-    </form>
+            <hr>
 
-    <div class="avatar">E</div>
-</header>
+            <ul class="menu">
+                <li><a href="#"><img src="imgs/biblioteca.png" alt=""> Biblioteca</a></li>
+                <li><a href="#"><img src="imgs/historial.png" alt=""> Historial</a></li>
+                <li><a href="#"><img src="imgs/me-gusta.png" alt=""> Me gusta</a></li>
+                <li><a href="#"><img src="imgs/ver-mas-tarde.png" alt=""> Ver más tarde</a></li>
+            </ul>
+        </section>
 
-<div class="contenedor">
+        <section class="barra-superior">
+            <form class="buscador">
+                <input type="text" placeholder="Buscar">
+                <button type="submit"><img src="imgs/buscar.png" alt="Buscar"></button>
+            </form>
 
-<aside class="sidebar">
-    <ul class="sidebar_lista">
-        <li class="activo"><a href="#">Inicio</a></li>
-        <li><a href="#">En vivo</a></li>
-        <li><a href="#">Guardados</a></li>
-        <li><a href="#">Historial</a></li>
-    </ul>
+            <div class="usuario">
+                <button class="boton-subir"><img src="imgs/subir.png" alt=""> Crear</button>
+                <img class="foto-perfil" src="imgs/avatar.png" alt="Mi canal">
+            </div>
+        </section>
+    </nav>
 
-    <h3 class="sidebar_titulo">Canales</h3>
-    <ul class="sidebar_lista canales">
-        <li><a href="#"><span class="mini_avatar c_uno"></span> Canal Uno</a></li>
-        <li><a href="#"><span class="mini_avatar c_dos"></span> Juegos y Más</a></li>
-        <li><a href="#"><span class="mini_avatar c_tres"></span> Cocina Fácil</a></li>
-    </ul>
-</aside>
+    <main>
+        <section class="categorias">
+            <a href="#" class="activo">Todos</a>
+            <a href="#">Música</a>
+            <a href="#">Videojuegos</a>
+            <a href="#">Programación</a>
+            <a href="#">Deportes</a>
+            <a href="#">Cocina</a>
+            <a href="#">Noticias</a>
+        </section>
 
-<main>
 
-<section class="categorias">
-    <button class="categoria activo">Todo</button>
-    <button class="categoria">Música</button>
-    <button class="categoria">Juegos</button>
-    <button class="categoria">Cocina</button>
-    <button class="categoria">Programación</button>
-</section>
+        <section class="videos">
+            <article class="video">
+                <img class="miniatura" src="imgs/miniaturas/video-1.jpg" alt="">
+                <div class="info">
+                    <div class="avatar">E</div>
+                    <div>
+                        <h3>Los 3 AGUJEROS DE GUIÓN que ARRUINARON Shingeki No Kyojin (Parte 2)</h3>
+                        <p>El Tío Jaeger</p>
+                        <p>503 k vistas · hace 1 año</p>
+                    </div>
+                </div>
+            </article>
 
-<section class="videos_grid">
+            <article class="video">
+                <img class="miniatura" src="imgs/miniaturas/video-2.jpg" alt="">
+                <div class="info">
+                    <div class="avatar">T</div>
+                    <div>
+                        <h3>Yes.. this choice is actually in the game</h3>
+                        <p>Turned</p>
+                        <p>1.2 M de vistas · hace 3 meses</p>
+                    </div>
+                </div>
+            </article>
 
-    <article class="video_card">
-        <div class="miniatura m1">
-            <span class="duracion">12:34</span>
-        </div>
-        <h4>Cómo hacer una página web desde cero</h4>
-        <p class="canal">Canal Uno</p>
-        <p class="datos">120 mil vistas · hace 2 días</p>
-    </article>
+            <article class="video">
+                <img class="miniatura" src="imgs/miniaturas/video-3.jpg" alt="">
+                <div class="info">
+                    <div class="avatar">R</div>
+                    <div>
+                        <h3>Levi vs Aberrant Titan - Shingeki No Kyojin OVA [4K 60FPS]</h3>
+                        <p>Ryukah TK</p>
+                        <p>4.1 M de vistas · hace 5 años</p>
+                    </div>
+                </div>
+            </article>
 
-    <article class="video_card">
-        <div class="miniatura m2">
-            <span class="duracion en_vivo">EN VIVO</span>
-        </div>
-        <h4>Jugando terror hasta las 4am</h4>
-        <p class="canal">Juegos y Más</p>
-        <p class="datos">3,2 mil mirando</p>
-    </article>
+            <article class="video">
+                <img class="miniatura" src="imgs/miniaturas/video-4.jpg" alt="">
+                <div class="info">
+                    <div class="avatar">K</div>
+                    <div>
+                        <h3>How to DRASTICALLY Speed Up Steam Downloads NO CLICKBAIT</h3>
+                        <p>KUPOkinz</p>
+                        <p>4.2 M de vistas · hace 8 meses</p>
+                    </div>
+                </div>
+            </article>
 
-    <article class="video_card">
-        <div class="miniatura m3">
-            <span class="duracion">8:02</span>
-        </div>
-        <h4>Milanesas a la napolitana como las de la abuela</h4>
-        <p class="canal">Cocina Fácil</p>
-        <p class="datos">45 mil vistas · hace 1 semana</p>
-    </article>
+            <article class="video">
+                <img class="miniatura" src="imgs/miniaturas/video-5.jpg" alt="">
+                <div class="info">
+                    <div class="avatar">B</div>
+                    <div>
+                        <h3>Escribí una película y no tengo plata para filmarla (todavía) | Episodio 1</h3>
+                        <p>Bruno Rondini</p>
+                        <p>4.2 K vistas · hace 2 días</p>
+                    </div>
+                </div>
+            </article>
 
-    <article class="video_card">
-        <div class="miniatura m4">
-            <span class="duracion">15:47</span>
-        </div>
-        <h4>Arduino y ESP32: primer proyecto</h4>
-        <p class="canal">Canal Uno</p>
-        <p class="datos">22 mil vistas · hace 5 días</p>
-    </article>
+            <article class="video">
+                <img class="miniatura" src="imgs/miniaturas/video-6.jpg" alt="">
+                <div class="info">
+                    <div class="avatar">W</div>
+                    <div>
+                        <h3>Attack On Titan Scenes That Were Much More Brutal In The Manga</h3>
+                        <p>Weeb World</p>
+                        <p>1.1 M de vistas · hace 3 años</p>
+                    </div>
+                </div>
+            </article>
 
-    <article class="video_card">
-        <div class="miniatura m5">
-            <span class="duracion">4:20</span>
-        </div>
-        <h4>Juegos indie hechos en Godot</h4>
-        <p class="canal">Juegos y Más</p>
-        <p class="datos">78 mil vistas · hace 2 semanas</p>
-    </article>
+            <article class="video">
+                <img class="miniatura" src="imgs/miniaturas/video-7.jpg" alt="">
+                <div class="info">
+                    <div class="avatar">M</div>
+                    <div>
+                        <h3>360° EREN FOUNDING TITAN TRANSFORMATION | The Rumbling - Attack on Titan S4 VR</h3>
+                        <p>MVR</p>
+                        <p>2.6 M de vistas · hace 4 años</p>
+                    </div>
+                </div>
+            </article>
 
-    <article class="video_card">
-        <div class="miniatura m6">
-            <span class="duracion">22:10</span>
-        </div>
-        <h4>Pizza casera en 30 minutos</h4>
-        <p class="canal">Cocina Fácil</p>
-        <p class="datos">9 mil vistas · hace 1 día</p>
-    </article>
+            <article class="video">
+                <img class="miniatura" src="imgs/miniaturas/video-8.jpg" alt="">
+                <div class="info">
+                    <div class="avatar">M</div>
+                    <div>
+                        <h3>Come Todo lo que Hay en este Supermercado por 1,000,000 de Dólares</h3>
+                        <p>MrBeast</p>
+                        <p>325 M de vistas · hace 1 mes</p>
+                    </div>
+                </div>
+            </article>
+        </section>
 
-</section>
 
-</main>
-
-</div>
-
-<footer>
-    <p>&copy; Enzo Benjamin Romero</p>
-</footer>
-
+        <section class="shorts">
+            <h2><img src="imgs/shorts.png" alt=""> Shorts</h2>
+            <div class="lista-shorts">
+                <article>
+                    <img class="short" src="imgs/miniaturas/short-1.jpg" alt="">
+                    <h3>Todas las Curiosidades de la escena post créditos shingeki no ...</h3>
+                    <p>297 k vistas</p>
+                </article>
+                <article>
+                    <img class="short" src="imgs/miniaturas/short-2.jpg" alt="">
+                    <h3>This RUINS Lenses....</h3>
+                    <p>350 k vistas</p>
+                </article>
+                <article>
+                    <img class="short" src="imgs/miniaturas/short-3.jpg" alt="">
+                    <h3>Eres me traicionó...</h3>
+                    <p>1 M de vistas</p>
+                </article>
+                <article>
+                    <img class="short" src="imgs/miniaturas/short-4.jpg" alt="">
+                    <h3>¿Por qué Mikasa sabía que Eren estaba dentro de la boca del titán?...</h3>
+                    <p>486 k vistas</p>
+                </article>
+                <article>
+                    <img class="short" src="imgs/miniaturas/short-5.jpg" alt="">
+                    <h3>TOO MANY QUEST ACCESSORIES pt 2...</h3>
+                    <p>316 k vistas</p>
+                </article>
+                <article>
+                    <img class="short" src="imgs/miniaturas/short-6.jpg" alt="">
+                    <h3>Killing Characters with THEIR Weapons...</h3>
+                    <p>2.5 M de vistas</p>
+                </article>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
